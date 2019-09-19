@@ -1,5 +1,5 @@
 # android-samsung-keyboard-bug-demo
-An example app used to reproduce the Samsung Korean keyboard bug from Flutter.
+An example app used to reproduce the [Samsung Korean keyboard bug from Flutter](https://github.com/flutter/flutter/issues/29341).
 
 ## Reproduction instructions
 Use a later-model Samsung phone with the Samsung Keyboard set to the Korean language.
@@ -9,6 +9,14 @@ Use a later-model Samsung phone with the Samsung Keyboard set to the Korean lang
   1. Type "ㅇ" into the input.
   1. Notice that the result is backwards. It is "ㄴㅇ" when it should be "ㅇㄴ".
 
-It is known that an S6 does not exhibit this bug, but a Galaxy Note9 does. Using a different keyboard, like Gboard in Korean, does not exhibit the bug.
-
 <img src="./korean_input_bug.gif" />
+
+## Affected devices
+
+  * Known to be affected:
+    - S8
+    - S9
+    - Galaxy Note9
+  * Know to NOT be affected:
+    - S6 and earlier
+
